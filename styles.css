@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    max-width: 1440px;
+    padding: 10px; 
+    display: grid;
+    gap: 30px;
+    
+}
+h1 {
+    font-size: 30px;
+}
+p {
+    font-size: 15px;
+    opacity: 80%;
+}
+
+header {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+.header-1 {
+    font-family: serif;
+    font-size: 25px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.section-1 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+}
+.main-2 {
+    background-color:hsl(240, 100%, 5%);
+    color: white;
+    padding: 10px;
+}
+.main-2 h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 25px;
+    padding: 10px 0;
+}
+.main-2 p {
+    padding-top: 10px;
+}
+.second-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+}
+button {
+    background-color: hsl(5, 85%, 63%);
+    height: 30px;
+    width: 120px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.section-2 {
+    display: flex;
+    gap: 20px;
+    flex: wrap;
+}
+.section-2 h3 {
+    color: hsl(5, 85%, 63%);
+    font-size: 20px;
+}
+.section-2 h4 {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.sec2-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sec2-img {
+    flex: 1;
+    width: 100px;
+    height: 110px;
+    overflow: hidden;
+}
+.sec2-img img {
+    object-fit: fill;
+}
+.sec2-text {
+    flex: 2;
+}
+
+hr {
+    margin: 30px 0;
+    opacity: 20%;
+    color: hsl(36, 100%, 99%);
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 11px;
+    }
+    main {
+        padding: 15px;
+    }
+    .section-1 {
+        grid-template-columns: 1fr;
+    }
+    .second-div {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .second-div h1 {
+        place-self: start;
+    }
+    .section-2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 12px;
+        opacity: 85%;
+    }
+    
+    
+    
+}
