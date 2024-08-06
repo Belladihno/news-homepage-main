@@ -1,161 +1,183 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  font-family: 'Poppins', sans-serif;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 main {
-    max-width: 1440px;
-    padding: 10px; 
-    display: grid;
-    gap: 30px;
-    
-}
-h1 {
-    font-size: 30px;
-}
-p {
-    font-size: 15px;
-    opacity: 80%;
+  max-width: 1280px;
+  padding: 0 10px;
+  display: grid;
+  margin: 0 auto;
+  gap: 30px;
 }
 
-header {
-    display: flex;
-    padding-top: 10px;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    z-index: 2;
+p,
+nav ul {
+  font-size: 12px;
+  opacity: 70%;
 }
-.header-1 {
-    font-family: serif;
-    font-size: 25px;
+header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.sub-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 1280px;
+}
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
 }
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 .section-1 {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
 .main-2 {
-    background-color:hsl(240, 100%, 5%);
-    color: white;
-    padding: 10px;
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  padding: 10px;
 }
 .main-2 h2 {
-    color: hsl(35, 77%, 62%);
-    font-size: 25px;
-    padding: 10px 0;
+  color: hsl(35, 77%, 62%);
+  padding: 10px 0;
 }
 .main-2 p {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 .second-div {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 20px;
 }
 
 .image {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 button {
-    background-color: hsl(5, 85%, 63%);
-    height: 30px;
-    width: 120px;
-    margin-top: 20px;
-    letter-spacing: 2px;
+  background-color: hsl(5, 85%, 63%);
+  height: 30px;
+  width: 120px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  border: 0;
 }
 .section-2 {
-    display: flex;
-    gap: 20px;
-    flex: wrap;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
-.section-2 h3 {
-    color: hsl(5, 85%, 63%);
-    font-size: 20px;
-}
-.section-2 h4 {
-    font-size: 15px;
-    margin: 10px 0;
-}
-
 .sec2-div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
-
 .sec2-img {
-    flex: 1;
-    width: 100px;
-    height: 110px;
-    overflow: hidden;
+  flex: 1;
+  width: 100px;
+  height: 110px;
+  overflow: hidden;
 }
 .sec2-img img {
-    object-fit: fill;
+  object-fit: fill;
 }
 .sec2-text {
-    flex: 2;
+  flex: 2;
+}
+.sec2-main1 {
+  display: flex;
+  gap: 20px;
+}
+.section-2 h4 {
+  margin: 10px 0;
+  font-weight: 900;
+}
+.section-2 h3 {
+  color: hsl(5, 85%, 63%);
+  font-size: 1.5rem;
+}
+
+.attribution {
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 hr {
-    margin: 30px 0;
-    opacity: 20%;
-    color: hsl(36, 100%, 99%);
+  margin: 30px 0;
+  opacity: 20%;
+  color: hsl(36, 100%, 99%);
 }
 
 @media (max-width: 600px) {
-    body {
-        font-size: 11px;
-    }
-    main {
-        padding: 15px;
-    }
-    .section-1 {
-        grid-template-columns: 1fr;
-    }
-    .second-div {
-        flex-direction: column;
-        gap: 5px;
-    }
-    .second-div h1 {
-        place-self: start;
-    }
-    .section-2 {
-        flex-direction: column;
-        gap: 15px;
-    }
-    h1 {
-        font-size: 25px;
-    }
-    p {
-        font-size: 12px;
-        opacity: 85%;
-    }
-    
-    
-    
+  body {
+    font-size: 11px;
+  }
+  .section-1 {
+    grid-template-columns: 1fr;
+  }
+  .second-div {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .second-div h1 {
+    place-self: start;
+  }
+  .section-2 {
+    grid-template-columns: 1fr;
+  }
+  .sec2-main1 {
+    flex-direction: column;
+  }
+  h1,
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  p {
+    font-size: 12px;
+    opacity: 60%;
+  }
+  nav ul {
+    font-size: 9px;
+    gap: 10px;
+  }
 }
